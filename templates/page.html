@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>File Upload</title>
+        <script type="text/javascript" src="{{static_url('jquery.js')}}"></script>
+        <script type="text/javascript" src="{{static_url('index.js')}}"></script>
+    </head>
+    <body>
+        <form method="POST" action="upload" enctype="multipart/form-data">
+            File:<input type="file" name="file"/>
+            <input type="submit" value="submit"/>
+        </form>
+        <div id="status"></div>
+    </body>
+</html>
+
