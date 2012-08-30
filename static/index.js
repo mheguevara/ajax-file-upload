@@ -21,6 +21,7 @@ $('form').live('submit', function(){
             return myXhr;
         }
     });
+    $('div#status').html('File is being uploaded...');
     return false;
 });
 
