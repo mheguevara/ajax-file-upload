@@ -27,7 +27,8 @@ $('form').live('submit', function(){
 handleProgress = function(evnt){
     if(evnt.lengthComputable){
         var ratio = (evnt.loaded / evnt.total) * 100;
-        $('div#status').html(ratio+"% uploaded");
+        $('progress').attr({value:ratio})
     }
+
 }
 
